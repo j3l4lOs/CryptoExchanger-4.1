@@ -1,0 +1,9 @@
+1. Open phpMyAdmin and import update.sql from folder Update v4.1
+2. Copy all files and folders from folder Update v4.1 and paste it overwrite all old.
+
+Thats all!
+If you need help with update contact us support@cryptoexchangerscript.com
+
+Donate to our work:
+	PayPal: https://www.paypal.me/interwebbg
+	Bitcoin: 1Ng5B645vyB4KUpa5fW9trD2uK4QCWeWH4

@@ -1,0 +1,118 @@
+
+	[@homepage_wops]
+	<div class="page-bottom-info">
+			<div class="page-bottom-info-inner">
+				<div class="page-bottom-info-content container">
+					<div class="row">
+						<div class="col-md-12 page-content">
+							<div class="inner-box category-content">
+									
+								<h2 class="title-2">[#lang_exchange]</h2>
+								<form id="CE_ExForm">
+								<div class="row" style="margin:10px;">
+									<div class="col-md-2 hidden-xs hidden-sm">
+										<center>
+											<img id="ce_send_img" src="[@send_icon]" class="img-circle cryptoexchanger-icon" width="72px" height="72px">
+										</center>
+									</div>
+									<div class="col-md-4">
+										<div class="form-group">
+											<label>[#lang_send]</label>
+											<select class="form-control cryptoexchanger-select" name="ce_gateway_send" id="ce_gateway_send" onChange="ce_refresh(1,this.value);">
+													[@send_list]
+											</select>
+										</div>
+										<div class="form-group">
+											<input type="text" class="form-control cryptoexchanger-input" id="ce_amount_send" name="ce_amount_send" value="[@am_send]" onkeyup="ce_calculator(1);" onkeydown="ce_calculator(1);">
+										</div>
+										<span class="pull-right"><small>[#lang_exchange_rate]: <span id="ce_exchange_rate">[@rate_from] [@currency_from] = [@rate_to] [@currency_to]</span></small></span>
+									</div>
+									<div class="col-md-4">
+										<div class="form-group">
+											<label>[#lang_receive]</label>
+											<select class="form-control cryptoexchanger-select" name="ce_gateway_receive" id="ce_gateway_receive" onChange="ce_refresh(2,this.value);">
+													[@receive_list]
+											</select>
+										</div>	
+										<div class="form-group">
+												<input type="text" class="form-control cryptoexchanger-input" id="ce_amount_receive" name="ce_amount_receive" value="[@am_receive]" onkeyup="ce_calculator(2);" onkeydown="ce_calculator(2);">
+											</div>
+											<span><small>[#lang_reserve]: <span id="ce_reserve_text">[@reserve] [@currency_to]</span></small></span>
+									</div>
+									<div class="col-md-2 hidden-xs hidden-sm">
+										<center>
+											<img id="ce_receive_img" src="[@receive_icon]" class="img-circle cryptoexchanger-icon" width="72px" height="72px">
+										</center>
+									</div>
+									<div class="col-md-12">
+											<input type="hidden" name="ce_rate_from" id="ce_rate_from" value="[@rate_from]">
+											<input type="hidden" name="ce_rate_to" id="ce_rate_to" value="[@rate_to]">
+											<input type="hidden" name="ce_currency_from" id="ce_currency_from" value="[@currency_from]">
+											<input type="hidden" name="ce_currency_to" id="ce_currency_to" value="[@currency_to]">
+											<input type="hidden" name="ce_reserve" id="ce_reserve" value="[@reserve]">
+											<input type="hidden" name="ce_amount_send2" id="ce_amount_send2" value="[@am_send]">
+											<input type="hidden" name="ce_amount_receive2" id="ce_amount_receive2" value="[@am_receive]">
+											<input type="hidden" name="ce_sic1" id="ce_sic1" value="[@sic1]">
+											<input type="hidden" name="ce_sic2" id="ce_sic2" value="[@sic2]">
+										<br>
+										<center>
+											<button type="button" id="ce_exbtn" onclick="ce_exchange('#CE_ExForm');" class="btn btn-primary btn-lg"><i class="fa fa-refresh"></i> [#lang_btn_17]</button>
+											<span id="ce_status_loading" style="display:none;"><br><br><span class="badge badge-info cryptoexchanger-badge-text"><i class="fa fa-spin fa-spinner"></i> [#lang_please_wait]...</span></span>
+											<span id="ce_status"></span>
+										</center>
+									</div>
+								</div>
+							</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /.main-container -->
+		</div>
+
+
+	<div class="cryptoexchanger-news">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12"><h3>[#lang_title_latest_news]</h3></div>
+
+				[@latest_news]
+			</div>
+		</div>
+	</div>
+
+	<div class="main-container">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12"><h3>[#lang_title_our_reserve]</h3></div>
+					
+					[@reserve_list]
+
+				</div>
+			</div>
+		</div>
+		<!-- /.main-container -->
+
+		<div class="cryptoexchanger-reviews">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12"><h3>[#lang_title_reviews]</h3></div>
+		
+						[@reviews]
+					</div>
+				</div>
+			</div>
+
+		<div class="main-container">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12"><h3>[#lang_title_latest_exchanges]</h3></div>
+						
+						[@latest_exchanges]
+					</div>
+				</div>
+			</div>
+			<!-- /.main-container -->
+
+   

@@ -1,0 +1,59 @@
+Changelog v4.1:
+    - Added country dropdown list in profile settings
+    - Added UK Zip code validation
+    - Added Operator Status
+    - Added Work time
+    - Added Google reCaptcha
+    - Added Operator Panel
+    - Added Operators Activity
+    - Added auto order status change to expire after XX minutes if is not completed
+    - Added new merchant gateways: Stripe, Paytm
+
+New files: 
+    - app\admin\sources\operators.php
+    - app\operators\(ALL FILES)
+    - app\includes\payment_src\stripe-php\(ALL FILES)
+    - app\includes\payment_src\encdec_paytm.php
+    - app\templates\CryptoExchanger\rows\operator_online.html
+    - app\templates\CryptoExchanger\rows\operator_offline.html
+    - app\templates\CryptoExchanger\rows\worktime.html
+    - app\templates\CryptoExchanger\rows\homepage_wops.html
+    - app\templates\CryptoExchanger\rows\recaptcha.html
+    - app\templates\CryptoExchanger\pay\CreditCard.html
+    - app\templates\CryptoExchanger\assets\icons\CreditCard.png
+    - app\templates\CryptoExchanger\assets\icons\Paytm.png
+    - callbacks\Stripe_IPN.php
+    - callbacks\Paytm_IPN.php
+
+Modified Files:
+    - index.php
+    - app\languages\English.php (read comments which is new for v4.1)
+    - app\admin\sources\dashboard.php
+    - app\admin\sources\header.php
+    - app\admin\sources\settings.php
+    - app\admin\sources\login.php
+    - app\admin\sources\exchange_rates.php
+    - app\admin\sources\withdrawals.php
+    - app\admin\sources\exchange_gateways.php
+    - app\admin\requests\fields.php
+    - app\admin\index.php
+    - app\includes\function.gateway.php
+    - app\includes\function.payment.php
+    - app\includes\function.user.php
+    - app\includes\function.web.php
+    - app\sources\homepage.php
+    - app\sources\account.php
+    - app\sources\contacts.php
+    - app\sources\register.php
+    - app\sources\login.php
+    - app\sources\exchange.php
+    - app\sources\pay.php
+    - app\sources\order.php
+    - app\templates\CryptoExchanger\exchange.html
+    - app\templates\CryptoExchanger\password_reset.html
+    - app\templates\CryptoExchanger\login.html
+    - app\templates\CryptoExchanger\register.html
+    - app\templates\CryptoExchanger\contacts.html
+    - app\templates\CryptoExchanger\homepage.html
+    - app\templates\CryptoExchanger\account\settings_profile.html
+    - app\templates\CryptoExchanger\assets\css\style.css 
